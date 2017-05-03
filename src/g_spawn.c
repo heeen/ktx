@@ -270,6 +270,8 @@ void			SP_i_p_t();
 // Races
 void            SP_race_route_start();
 
+void            SP_func_portal();
+
 spawn_t         spawns[] = {
 	// info entities don't do anything at all, but provide positional
 	// information for things controlled by other processes
@@ -405,6 +407,8 @@ Used as a positional target for spotlights, etc.
 	// race routes
 	{"race_route_start",    SP_race_route_start},
 	{"race_route_marker",   SUB_Null},
+	// portal quake
+    {"func_portal",			SP_func_portal},
 
 	{0, 0}
 };
